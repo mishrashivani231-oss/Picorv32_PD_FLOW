@@ -9,3 +9,23 @@
 
 ## OpenLANE Setup
 Commands used:
+docker
+cd OpenLane
+make mount
+./flow.tcl -interactive
+package require openlane
+prep -design picorv32a
+
+
+---
+
+## Output Verification
+- Successfully loaded design
+- Workspace created
+- Files generated
+
+---
+
+## Screenshots
+(Add your screenshots here: )
+
