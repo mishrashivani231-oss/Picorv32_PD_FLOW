@@ -27,6 +27,7 @@ prep -design picorv32a
 ---
 
 ## Screenshots
+![Screenshot](Screenshot%202026-01-05%20101248.png)
 
 
 
