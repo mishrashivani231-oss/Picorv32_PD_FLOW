@@ -1,1 +1,32 @@
+# Day 1 – Introduction & Environment Setup
+
+## Objective
+- Understand RISC-V & PicoRV32
+- Learn ASIC Physical Design Flow
+- Set up OpenLANE & Sky130 PDK
+
+---
+
+## OpenLANE Setup
+Commands used:
+docker
+cd OpenLane
+make mount
+./flow.tcl -interactive
+package require openlane
+prep -design picorv32a
+
+
+---
+
+## Output Verification
+- Successfully loaded design
+- Workspace created
+- Files generated
+
+---
+
+## Screenshots
+
+
 
