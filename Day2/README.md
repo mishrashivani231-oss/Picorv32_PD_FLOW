@@ -1,4 +1,4 @@
-# Day 2 – Logic Synthesis, Floorplan & Power Planning
+# Day 2 – Synthesis, Floorplan & Power Planning
 
 ---
 
@@ -19,7 +19,7 @@ run_synthesis
 
 ---
 
-## 📌 What Happens During Synthesis?
+## What Happens During Synthesis?
 - RTL is optimized
 - Combinational + sequential logic mapped to real standard cells
 - Constraints are applied
@@ -62,9 +62,24 @@ run_power_grid_generation
 
 ## 🖼 Screenshots
 (Add synthesis area + floorplan + PDN images)
+![Screenshot](Screenshot%202026-01-05%20112402.png)
+![Screenshot](Screenshot%202026-01-05%20112514.png)
+
 
 
 ---
+
+# Load generated floorplan def in magic tool and explore the floorplan.
+Commands to load floorplan def in magic in another terminal
+
+# Change directory to path containing generated floorplan def
+cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/17-03_12-06/results/floorplan/
+
+# Command to load the floorplan def in magic tool
+magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &
+
+
+
 
 ## Conclusion
 ✔ Successfully synthesized PicoRV32  
