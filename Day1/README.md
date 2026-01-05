@@ -54,12 +54,12 @@ OpenLANE is an open-source RTL → GDSII flow consisting of:
 
 ## 🔧 Environment Setup
 Commands:
-a. docker
-b. cd OpenLane
-c. make mount
-d. ./flow.tcl -interactive
-e. package require openlane
-f. prep -design picorv32a
+-docker
+-cd OpenLane
+-make mount
+-./flow.tcl -interactive
+-package require openlane
+-prep -design picorv32a
 
 
 ---
