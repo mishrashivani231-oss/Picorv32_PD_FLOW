@@ -1,0 +1,18 @@
+# Day 1 – Introduction & Environment Setup
+
+## Topics Covered
+- Understanding RISC-V and PicoRV32
+- Introduction to Physical Design Flow
+- OpenLANE Architecture
+- SkyWater 130 PDK Introduction
+
+---
+
+## OpenLANE Setup
+- Installed OpenLANE Docker
+- Installed Sky130 PDK
+- Verified environment
+
+---
+
+
