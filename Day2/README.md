@@ -85,7 +85,25 @@ Diagonally equidistant cells
 ![Screenshot](Screenshot%202026-01-08%20101325.png)
 
 # Run 'picorv32a' design congestion aware placement using OpenLANE flow and generate necessary outputs.
-Command to run placement:
+# Day 3 – Placement and Clock Tree Synthesis
+
+---
+
+## What is Placement?
+Placement determines the location of standard cells inside chip core.
+
+### Phases of Placement
+1) Global Placement
+2) Detailed Placement
+
+Goals of Placement:
+✔ Reduce wirelength  
+✔ Maintain legality  
+✔ Improve timing  
+
+---
+
+## Placement Command
 run_placement
 ![Screenshot](Screenshot%202026-01-08%20101943.png)
 
