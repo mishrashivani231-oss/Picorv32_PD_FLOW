@@ -42,7 +42,10 @@ ls
 
 # Command to open custom inverter layout in magic
 magic -T sky130A.tech sky130_inv.mag &
+![Screenshot](Screenshot%202026-01-08%20111916.png) 
 
+Custom inverter layout in magic
+![Screenshot](Screenshot%202026-01-08%20150412.png)
 2. Open and explore inverter layout in Magic
 
 4. Extract SPICE netlist from layout
