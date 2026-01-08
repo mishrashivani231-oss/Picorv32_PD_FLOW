@@ -44,14 +44,30 @@ ls
 magic -T sky130A.tech sky130_inv.mag &
 ![Screenshot](Screenshot%202026-01-08%20111916.png) 
 
+
+2. Open and explore inverter layout in Magic
 Custom inverter layout in magic
 ![Screenshot](Screenshot%202025-12-24%20150412.png)
-2. Open and explore inverter layout in Magic
-
 4. Extract SPICE netlist from layout
-5. Modify model file for simulation compatibility
-6. Perform post-layout simulations in ngspice
-7. Identify DRC rule errors in Sky130 tech file & correct them
+Commands used in the Magic tkcon window for extracting the SPICE netlist of the custom inverter layout
+  ```bash
+# Check current directory
+pwd
+
+# Extraction command to extract to .ext format
+extract all
+
+# Before converting ext to spice this command enable the parasitic extraction also
+ext2spice cthresh 0 rthresh 0
+
+# Converting to ext to spice
+ext2spice
+```
+![Screenshot](Screenshot%202025-12-24%20150412.png)
+
+6. Modify model file for simulation compatibility
+7. Perform post-layout simulations in ngspice
+8. Identify DRC rule errors in Sky130 tech file & correct them
 
 
 
