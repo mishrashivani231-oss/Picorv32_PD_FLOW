@@ -78,23 +78,23 @@ cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/17-03
 magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &
 
 Floorplan def in magic
-![Screenshot](Screenshot%202026-01-05%20101155.png)
+![Screenshot](Screenshot%202026-01-08%20101155.png)
 
 
 Diagonally equidistant cells
-![Screenshot](Screenshot%202026-01-05%20101325.png)
+![Screenshot](Screenshot%202026-01-08%20101325.png)
 
 # Run 'picorv32a' design congestion aware placement using OpenLANE flow and generate necessary outputs.
 Command to run placement:
 run_placement
-![Screenshot](Screenshot%202026-01-05%20101943.png)
+![Screenshot](Screenshot%202026-01-08%20101943.png)
 
 Commands to load placement def in magic in another terminal
 cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/17-03_12-06/results/placement/
 
 # Command to load the placement def in magic tool
 magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &
-![Screenshot](Screenshot%202026-01-05%20102254.png)
+![Screenshot](Screenshot%202026-01-08%20102254.png)
 
 Standard cells placed:
 
