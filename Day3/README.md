@@ -71,10 +71,64 @@ Created Spice file:
 
 4. Modify model file for simulation compatibility
 
-7. Perform post-layout simulations in ngspice
-8. Identify DRC rule errors in Sky130 tech file & correct them
+Measured the grid size and did the adjustment accordingly:
+<img width="1135" height="629" alt="image" src="https://github.com/user-attachments/assets/a801e21d-2155-471d-a80f-7daf75d1fc7d" />
 
+5. Perform post-layout simulations in ngspice
+Commands for ngspice simulation:
+```bash
+# Command to directly load spice file for simulation to ngspice
+ngspice sky130_inv.spice
 
+# Now that we have entered ngspice with the simulation spice file loaded we just have to load the plot
+plot y vs time a
+```
+<img width="1182" height="600" alt="image" src="https://github.com/user-attachments/assets/42676e77-e0b5-4251-9c62-6bed3c9c46f4" />
 
-Section 3 – Tasks 1 to 5 files, reports & logs:
-vsdstdcelldesign
+After running the ngspice, here is the plot obtained of the inverter:
+<img width="1022" height="637" alt="image" src="https://github.com/user-attachments/assets/e9668098-afad-4300-89ea-64c490b2f4ba" />
+<img width="949" height="639" alt="image" src="https://github.com/user-attachments/assets/a60e23fa-df0a-4d34-a32e-ee7f8c1ef862" />
+
+6. Identify DRC rule errors in Sky130 tech file & correct them
+Commands used to obtain and inspect the SkyWater Magic technology file with known DRC issues, along with the related files required for debugging:
+```bash
+# Change to home directory
+cd
+
+# Command to download the lab files
+wget http://opencircuitdesign.com/open_pdks/archive/drc_tests.tgz
+
+# Since lab file is compressed command to extract it
+tar xfz drc_tests.tgz
+
+# Change directory into the lab folder
+cd drc_tests
+
+# List all files and directories present in the current directory
+ls -al
+
+# Command to view .magicrc file
+gvim .magicrc
+
+# Command to open magic tool in better graphics
+magic -d XR &
+```
+Incorrectly implemented poly.9 rule no drc violation even though spacing < 0.48u 
+<img width="1053" height="603" alt="image" src="https://github.com/user-attachments/assets/3af477b5-8df2-4de3-8d34-c5d4ac7ce6d8" />
+commands inserted in sky130A.tech file to update drc:
+<img width="1160" height="603" alt="image" src="https://github.com/user-attachments/assets/eb78237a-a459-4365-b3fe-c19a8408aa62" />
+
+Commands to run in tkcon window
+```bash
+# Loading updated tech file
+tech load sky130A.tech
+
+# Must re-run drc check to see updated drc errors
+drc check
+
+# Selecting region displaying the new errors and getting the error messages 
+drc why
+```
+After implementing the rule:
+<img width="635" height="563" alt="image" src="https://github.com/user-attachments/assets/5c54c8da-68c2-461a-9fe1-4d4cd53b8b74" />
+
