@@ -130,5 +130,6 @@ drc check
 drc why
 ```
 After implementing the rule:
+
 <img width="635" height="563" alt="image" src="https://github.com/user-attachments/assets/5c54c8da-68c2-461a-9fe1-4d4cd53b8b74" />
 
