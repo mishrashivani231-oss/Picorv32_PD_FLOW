@@ -61,7 +61,6 @@ run_power_grid_generation
 ---
 
 ## 🖼 Screenshots
-(Add synthesis area + floorplan + PDN images)
 ![Screenshot](Screenshot%202026-01-05%20112402.png)
 ![Screenshot](Screenshot%202026-01-05%20112514.png)
 
