@@ -63,7 +63,7 @@ ext2spice cthresh 0 rthresh 0
 # Converting to ext to spice
 ext2spice
 ```
-![Screenshot](Screenshot%202025-12-24%20112740.png)
+![Screenshot](Screenshot%202026-01-08%20112740.png)
 
 Created Spice file:
 <img width="1183" height="586" alt="image" src="https://github.com/user-attachments/assets/f4ab1218-4917-4d17-84bb-48d49611e3f0" />
