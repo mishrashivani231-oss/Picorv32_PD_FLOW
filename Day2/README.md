@@ -88,7 +88,7 @@ Diagonally equidistant cells
 # Run 'picorv32a' design congestion aware placement using OpenLANE flow and generate necessary outputs.
 Command to run placement:
 run_placement
-
+![Screenshot](Screenshot%202026-01-05%20101943.png)
 
 
 ## Conclusion
