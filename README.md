@@ -45,7 +45,7 @@ this repository summarizes the complete RTL-to-GDSII flow into 5 structured days
 - Timing Reports
 - Layout Screenshots
 
-All final results are available in `/results` folder.
+
 
 ---
 
